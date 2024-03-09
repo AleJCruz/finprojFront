@@ -1,0 +1,31 @@
+<div class="container">
+  <img class="img-start" src="assets/images/ingreso.jpg" alt="Fondo">
+  <div class="form-container">
+    <div class="form-register">
+      <h1 class="text-center">Regístrate</h1>
+      <form>
+        <div class="fields">
+          <div class="field">
+            <input id="nombre" type="text" placeholder="Ingresa tu nombre" [(ngModel)]="username" name="nombre">
+          </div>
+          <div class="field">
+            <input id="apellido" type="text" placeholder="Ingresa tu apellido" [(ngModel)]="userlastname" name="apellido">
+          </div>
+          <div class="field">
+            <input id="dni" type="text" placeholder="Ingresa tu DNI" [(ngModel)]="userdni" name="dni">
+          </div>
+          <div class="field">
+            <input id="email" type="text" placeholder="Ingresa tu correo" [(ngModel)]="email" name="email">
+          </div>
+          <div class="field">
+            <input id="password" type="password" placeholder="Ingresa tu contraseña" [(ngModel)]="password" name="password">
+          </div>
+        </div>
+        <div class="actions">
+          <button (click)="register()" type="submit">Registrarse</button>
+          <a routerLink="/login">¿Ya tienes una cuenta? Inicia sesión</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

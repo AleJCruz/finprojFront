@@ -1,0 +1,30 @@
+<body>
+
+<div class="container">
+  <div class="form-container">
+    <div class="form-login">
+      <h1 class="text-center">BIENVENIDO</h1>
+      <form>
+        <div class="fields">
+          <div class="field">
+            <input id="email" type="text" placeholder="Ingresa tu correo" [(ngModel)]="email"
+                   name="email">
+          </div>
+          <div class="field">
+            <input id="password" type="password" placeholder="Ingresa tu contraseña"
+                   [(ngModel)]="password" name="password">
+          </div>
+        </div>
+        <div class="actions">
+          <button (click)="login()" type="submit">Ingresar</button>
+          <a href="#">¿Olvidaste tu contraseña?</a>
+          <a routerLink="/registro">¿Aun no te has registrado?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<img class="img-start" src="assets/images/ingreso.jpg">
+
+</body>

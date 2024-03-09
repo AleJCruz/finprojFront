@@ -1,0 +1,128 @@
+.navbar {
+    background-color: #1c62be;
+    padding: 10px 0;
+}
+.navbar-brand {
+    display: flex; /*se muestra uno a continuacion de otro de inzq a derecha*/
+    /*justify-conent:space-betweem es para dar espacio entre los componentes*/
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.navbar-brand:hover {
+    color: rgb(245, 179, 244);
+}
+.navbar-brand h1 {
+    margin: 0;
+    text-transform: uppercase;
+}
+.navbar-brand img {
+    max-width: 100px;
+    width: 100%;
+}
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 720px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+@media (min-width: 720px) {
+    .navbar-nav {
+        flex-direction: row;
+        column-gap: 10px;
+    }
+}
+
+.navbar-nav li {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.btn-login, .btn-logout {
+    background-color: #D662E0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.btn-login a, .btn-logout a {
+    text-decoration: none;
+    color: white;
+}
+
+.txt-search {
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 500px;
+    /* border-radius: 20px; */
+}
+
+.buscar {
+    display: flex;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+@media(min-width: 720px) {
+    .buscar {
+        margin-top: 0;
+    }
+}
+
+
+
+
+.btn-search {
+    background-color: #D662E0;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    /* border-radius: 5px; */
+    color: white;
+}
+
+.special {
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}

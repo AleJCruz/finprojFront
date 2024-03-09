@@ -1,0 +1,9 @@
+export class User
+{
+    id:number=0;
+    name: string="";
+    lastname: string="";
+    dni: string="";
+    email: string="";
+    password: string="";
+}
